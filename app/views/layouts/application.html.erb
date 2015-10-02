@@ -7,6 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		<div class="col-xs-3">
+			Maestro's Wisdom
+		</div>
+		<div class="col-xs-4">
+			An interactive conversation about MasterCaster
+		</div>
+		<div class="col-xs-5">
+			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'About', '#' %>
+		</div>
+	</header>
+
+	<br class="clear" />
 
 <%= yield %>
 
