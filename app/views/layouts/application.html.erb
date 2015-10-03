@@ -29,7 +29,21 @@
 	<hr />
 	<br class="clear" />
 
-<%= yield %>
+<div class="container">
+	<%= yield %>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="col-xs-6">
+			<%= link_to "Take it away, Maestro", "#", :class => 'next-quote' %>
+		</div>
+		<div class="col-xs-6 footer-blurb">
+			Created by Professor Robbie at the <a href="http://pinkmicrophones.com">Pink Microphones Laboratory</a> with considerable help from <a href="http://thefirehoseproject.com">the FirehoseProject.</a><br/>
+			For more of Maestro, <a href="https://itunes.apple.com/us/podcast/mastercaster!-pink-microphones/id1035151026">listen to MasterCaster on iTunes!</a>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
