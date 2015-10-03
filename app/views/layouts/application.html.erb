@@ -9,20 +9,22 @@
 <body>
 	<header>
 		<div class="col-xs-3">
-			<div class="circle">
-  				<br />
-  				Greetings,
-  				<br />
-  				stupid
-  				<br />
-  				humans.
-			</div>
+			<%= link_to root_path, :class => 'logo' do %>
+				<div class="circle">
+  					<br />
+  					Greetings,
+  					<br />
+  					stupid
+  					<br />
+  					humans.
+				</div>
+			<% end %>
 		</div>
 		<div class="col-xs-4 slogan">
-			An interactive conversation about MasterCaster
+			Telling the truth about MasterCaster
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', new_quote_path %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
@@ -36,10 +38,10 @@
 <div class="footer">
 	<div class="container">
 		<div class="col-xs-6">
-			<%= link_to "Take it away, Maestro", "#", :class => 'next-quote' %>
+			<%= link_to "Take it away, Maestro", root_path, :class => 'next-quote' %>
 		</div>
 		<div class="col-xs-6 footer-blurb">
-			Created by Professor Robbie at the <a href="http://pinkmicrophones.com">Pink Microphones Laboratory</a> with considerable help from <a href="http://thefirehoseproject.com">the FirehoseProject.</a><br/>
+			Created by Professor Robbie at the <a href="http://pinkmicrophones.com">Pink Microphones Laboratory</a>, with considerable help from <a href="http://thefirehoseproject.com">theFirehoseProject.</a><br/>
 			For more of Maestro, <a href="https://itunes.apple.com/us/podcast/mastercaster!-pink-microphones/id1035151026">listen to MasterCaster on iTunes!</a>
 		</div>
 	</div>
