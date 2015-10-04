@@ -78,6 +78,23 @@ h2 {
 
 .about {
     font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    padding-top: 26px;
+}
+
+@media (max-width: 750px) {
+    .footer-blurb {
+        text-align: left;
+    }
+}
+
+.modal {
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 span{
+    color: #4D4D4D;
+    font-family: 'latin_modern_mono10_regular', serif;
+}
+
+::selection {
+    background-color: #f84342;
 }
